@@ -1,10 +1,38 @@
+body {
+    background-color: #ccaa6bbd;
+}
+
 .title {
-    background-color: darkred;
+    background-color: rgb(119, 25, 8);
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
+.subtitulo {
+    line-height: 0.1;
+    padding-top: 1px;
+    margin-left: 160px;
+    font-style: italic;
+    font-size: 21px;
+}
+
+#titulo {
+    font-size: 40px;
+    line-height: 0.5;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+    margin-top: 30px;
+    margin-left: 100px;
+    font-family:'Times New Roman', Times, serif
+}
+
 .topnav {
-    background-color: navy;
+    background-color: rgb(109, 71, 40);
     font-size: 20px;
+    text-align: center;
+    text-decoration-color: white;
+}
+
+.searchbar {
+    padding-right: 30px;
 }
