@@ -36,3 +36,14 @@ body {
 .searchbar {
     padding-right: 30px;
 }
+
+.footer {
+    background-color: blue;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+}
