@@ -47,10 +47,14 @@ body {
     color: #f0e1c4bd;
 }
 
+.footer-text {
+    text-align: center;
+}
+
 .grid {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 1fr 300px;
+    grid-template-columns: 1fr 330px;
     grid-template-areas: 
     "header header"
     "main aside"
