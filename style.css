@@ -15,7 +15,6 @@
 
 .header {
     background-color: rgb(119, 25, 8);
-    background-image: ;
     padding-top: 10px;
     padding-bottom: 20px;
     margin-bottom: -40px;
@@ -59,13 +58,13 @@
 }
 
 
-.footer {
+#footer {
     background-color:   rgb(119, 25, 8);
     color: #f5deb0bd;
     padding-bottom: 50px;
 }
 
-.footer-text1, .footer-text2 {
+.footer-text1, #footer-text2 {
     text-align: center;
     font-size: 18px;
     text-size-adjust: auto;
@@ -84,8 +83,8 @@
     grid-template-areas: 
     "header header"
     "nav nav"
-    "img1 par1"
-    "img2 par2"
+    "main1 main2"
+    "main3 main4"
     "footer footer";
 }
 
@@ -118,25 +117,25 @@ nav ul {
 }
 
 #img1 {
- grid-area: img1;
+ grid-area: main1;
 }
 
 #par1 {
-    grid-area: par1;
+    grid-area: main2;
     font-size: 17px;
    }
 
 #img2 {
-    grid-area: img2;
+    grid-area: main3;
    }
 
 #par2 {
-    grid-area: par2;
+    grid-area: main4;
     font-size: 17px;
    }
 
 
 
-footer {
+#footer {
  grid-area: footer;
 }
