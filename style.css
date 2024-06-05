@@ -1,17 +1,33 @@
-body {
-    background-color: #ccaa6bbd;
+.body {
+    background-color: #cfa961bd;
+    
 }
+
+#img1, #par1 {
+    margin-top: 140px;
+}
+
+#img2, #par2 {
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
 
 .header {
     background-color: rgb(119, 25, 8);
+    background-image: ;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
+    margin-bottom: -40px;
+    position: fixed;
+    width: 100%;
 }
 
 .subtitulo {
     line-height: 0.1;
-    padding-top: 1px;
-    margin-left: 160px;
+    padding-top: 85px;
+    padding-right: 400px;
+    margin-right: 255px;
     font-style: italic;
     font-size: 21px;
 }
@@ -21,57 +37,111 @@ body {
     line-height: 0.5;
     padding-bottom: 1px;
     margin-bottom: 1px;
-    margin-top: 30px;
-    margin-left: 100px;
-    font-family:'Times New Roman', Times, serif
+    margin-top: 55px;
+    margin-left: 150px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.titulo, .subtitulo {
+    color: #f3e5cabd;
 }
 
 .aside {
     background-color: rgb(6, 6, 82);
     color: white;
+    padding: 05px;
 }
 
-.topnav {
-    background-color: rgb(109, 71, 40);
-    font-size: 20px;
+.nav {
+    background-color: rgb(97, 18, 4);
+    font-size: 22px;
     text-align: center;
-    text-decoration-color: white;
+    text-decoration-color: rgb(128, 7, 7);
+    line-height: 1;
+    position: fixed;
+    width: 100%;
+    margin-top: 125px;
+    padding-top: 10px;
 }
 
-.searchbar {
-    padding-right: 30px;
-}
 
 .footer {
-    background-color: rgb(119, 25, 8);
-    color: #f0e1c4bd;
+    background-color:   rgb(119, 25, 8);
+    color: #f5deb0bd;
+    padding-bottom: 50px;
 }
 
-.footer-text {
+.footer-text1, .footer-text2 {
     text-align: center;
+    font-size: 18px;
+    text-size-adjust: auto;
+}
+
+.footer-text1 {
+    display: block;
+    background-color: rgb(97, 18, 4);
 }
 
 .grid {
     display: grid;
-    grid-template-rows: 150px 1fr 300px;
-    grid-template-columns: 1fr 330px;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 100px, 1fr, auto, 200px, 200px;
+    grid-gap: 40px;
     grid-template-areas: 
     "header header"
-    "main aside"
+    "nav nav"
+    "img1 par1"
+    "img2 par2"
     "footer footer";
 }
 
-header {
- grid-area: header;
+.img {
+    max-width: 100%;
+    width: auto;
+  }
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content:100%;
+   
 }
 
-main {
- grid-area: main;
+.nav {
+ grid-area: nav;
+ display: flex;
+ align-items: center;
 }
 
-aside {
- grid-area: aside;
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
 }
+
+#img1 {
+ grid-area: img1;
+}
+
+#par1 {
+    grid-area: par1;
+    font-size: 17px;
+   }
+
+#img2 {
+    grid-area: img2;
+   }
+
+#par2 {
+    grid-area: par2;
+    font-size: 17px;
+   }
+
+
 
 footer {
  grid-area: footer;
